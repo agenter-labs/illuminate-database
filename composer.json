@@ -1,0 +1,38 @@
+{
+    "name": "agenter-labs/illuminate-database",
+    "description": "Database for Laravel",
+    "keywords": [
+        "laravel",
+        "database"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Abdulla",
+            "email": "dev@agenter.com",
+            "homepage": "https://agenter.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": ">=4.8",
+        "mockery/mockery": "0.9.*",
+        "laravel/lumen-framework": "^8.0"
+    },
+    "autoload": {
+    "psr-4": {
+            "AgenterLab\\Database\\": "./src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AgenterLab\\Database\\ModelServiceProvider"
+            ]
+        }
+    },
+    "prefer-stable": true
+}
