@@ -43,6 +43,9 @@ trait SoftDeletes
 
         $this->{$this->getIsDeletedColumn()} = 0;
 
+
+        $this->{$this->getDeletedAtColumn()} = 0;
+
         // Once we have saved the model, we will fire the "restored" event so this
         // developer will do anything they need to after a restore operation is
         // totally finished. Then we will return the result of the save call.
